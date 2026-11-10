@@ -13,7 +13,7 @@ const CONFIG = {
 
   /* --------------------------- OPENING SCREEN ------------------------- */
   opening: {
-    eyebrow: "For Someone Special",
+    eyebrow: "A Little Gift For You",
     title: "A Special Surprise For You",
     subtitle: "Ada sesuatu kecil yang disiapkan khusus untukmu.",
     button: "Open Your Surprise",
@@ -42,7 +42,7 @@ const CONFIG = {
       "Semoga apa yang kamu harapkan bisa segera terwujud. Jangan lupa bahagia dan tetap jadi diri sendiri!",
       "Have a wonderful day! 🎉✨",
     ],
-    signature: "With love", // ganti dengan namamu
+    signature: "Salam hangat",
   },
 
   /* ----------------------------- GALLERY ------------------------------ */
@@ -53,10 +53,10 @@ const CONFIG = {
     /* Ganti "src" dengan foto kamu, contoh: "assets/images/foto-1.jpg"
        Jumlah foto bebas — galeri mengikuti jumlah di array ini. */
     photos: [
-      { src: "assets/images/foto-1.jpg", caption: "The sweetest smile" },
+      { src: "assets/images/foto-1.jpg", caption: "Senyum terbaik" },
       { src: "assets/images/foto-2.jpg", caption: "Little moments, big memories" },
       { src: "assets/images/foto-3.jpg", caption: "Golden hour glow" },
-      { src: "assets/images/foto-4.jpg", caption: "Just being us" },
+      { src: "assets/images/foto-4.jpg", caption: "Hari yang santai" },
       { src: "assets/images/foto-5.jpg", caption: "One of my favorites" },
       { src: "assets/images/foto-6.jpg", caption: "Always worth remembering" },
     ],
@@ -64,9 +64,9 @@ const CONFIG = {
 
   /* ----------------------------- TIMELINE ----------------------------- */
   timeline: {
-    eyebrow: "Our Story",
+    eyebrow: "Along The Way",
     title: "Little Moments",
-    subtitle: "Potongan waktu yang selalu terasa hangat kalau diingat.",
+    subtitle: "Beberapa momen yang layak dikenang.",
     items: [
       {
         date: "The beginning",
@@ -86,7 +86,7 @@ const CONFIG = {
       {
         date: "To be continued",
         title: "More Memories to Come",
-        text: "Ceritanya belum selesai. Masih banyak halaman kosong yang menunggu diisi.",
+        text: "Masih banyak hal baik yang menunggu di depan.",
       },
     ],
   },
@@ -103,7 +103,7 @@ const CONFIG = {
   finale: {
     eyebrow: "One Last Thing",
     title: "You Deserve All The Happiness in The World",
-    text: "Kamu sudah sampai di akhir kejutan ini. Satu hal terakhir: jangan pernah ragu kalau kamu butuh teman cerita. Pintunya selalu terbuka.",
+    text: "Terima kasih sudah membaca sampai di sini. Semoga tahun ini penuh hal baik, dan semua yang sedang kamu usahakan pelan-pelan menemukan jalannya.",
     button: "One More Surprise",
     sign: "— Selamat ulang tahun, {name}.",
   },
@@ -114,16 +114,16 @@ const CONFIG = {
     title: "One More Thing…",
     // Setiap string menjadi satu paragraf di dalam modal.
     body: [
-      "Kartu ini bisa ditukar kapan saja, tanpa tanggal kedaluwarsa:",
-      "satu kali traktiran, satu kali jalan-jalan, atau satu kali didengarkan sampai ceritamu selesai.",
+      "Satu pesan terakhir: jangan lupa bahagia dan tetap jadi diri sendiri.",
+      "Kalau nanti ada hari yang berat, kamu nggak harus menghadapinya sendirian.",
     ],
-    sign: "🎁 Simpan kartunya, ya.",
+    sign: "🎁 Selamat ulang tahun, Angela.",
     closeButton: "Simpan baik-baik",
   },
 
   /* ------------------------------ FOOTER ------------------------------ */
   footer: {
-    text: "Made with ♥ for {fullName}",
+    text: "Dibuat untuk {fullName} 🎂",
     replay: "Putar ulang kejutan",
   },
 };
