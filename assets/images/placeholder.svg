@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000" role="img" aria-label="Placeholder foto kenangan">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff6f9" />
+      <stop offset="55%" stop-color="#ffe6f0" />
+      <stop offset="100%" stop-color="#efe6ff" />
+    </linearGradient>
+    <linearGradient id="heart" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffb3cd" />
+      <stop offset="100%" stop-color="#b491f2" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bg)" />
+  <rect width="800" height="1000" fill="url(#glow)" />
+
+  <g opacity="0.5" fill="#ffffff">
+    <circle cx="140" cy="180" r="6" />
+    <circle cx="680" cy="250" r="4" />
+    <circle cx="220" cy="820" r="5" />
+    <circle cx="600" cy="760" r="7" />
+    <circle cx="420" cy="130" r="4" />
+  </g>
+
+  <rect x="60" y="60" width="680" height="880" rx="24" fill="none" stroke="#ffffff" stroke-opacity="0.9" stroke-width="2" stroke-dasharray="10 12" />
+
+  <g transform="translate(400 440)">
+    <path d="M0 66C-14 50-96 2-96-42c0-30 24-52 52-52 20 0 34 10 44 26 10-16 24-26 44-26 28 0 52 22 52 52C96 2 14 50 0 66Z" fill="url(#heart)" opacity="0.92" />
+  </g>
+
+  <text x="400" y="610" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#7c6a78" letter-spacing="1">Foto kenangan</text>
+  <text x="400" y="658" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#a291a0">ganti dengan fotomu di config.js</text>
+</svg>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Happy Birthday, Angela! 🎂</title>
+  <meta name="description" content="Sebuah kejutan ulang tahun digital — surat, kenangan, dan doa baik untuk Angela Stefanie." />
+  <meta name="theme-color" content="#ffe8f0" />
+  <meta property="og:title" content="A Special Surprise For You 🎁" />
+  <meta property="og:description" content="Buka kejutan ulang tahunnya di sini." />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="is-locked">
+  <a class="skip-link" href="#main">Lewati ke konten utama</a>
+
+  <!-- ============ LOADER ============ -->
+  <div class="loader" id="loader" role="status" aria-live="polite">
+    <div class="loader__heart" aria-hidden="true">♥</div>
+    <p class="loader__text">Menyiapkan kejutan…</p>
+  </div>
+
+  <!-- ============ BACKGROUND DECOR ============ -->
+  <div class="decor" id="decor" aria-hidden="true">
+    <span class="decor__blob decor__blob--1"></span>
+    <span class="decor__blob decor__blob--2"></span>
+    <span class="decor__blob decor__blob--3"></span>
+  </div>
+
+  <canvas class="confetti-canvas" id="confetti" aria-hidden="true"></canvas>
+
+  <!-- ============ OPENING SCREEN ============ -->
+  <div class="opening" id="opening">
+    <div class="opening__halo" aria-hidden="true"></div>
+    <div class="opening__card">
+      <span class="opening__badge" aria-hidden="true">
+        <span class="opening__badge-glow"></span>🎁
+      </span>
+      <p class="eyebrow" id="openingEyebrow">For Someone Special</p>
+      <h1 class="opening__title" id="openingTitle">A Special Surprise For You</h1>
+      <p class="opening__sub" id="openingSub">Ada sesuatu kecil yang disiapkan khusus untukmu.</p>
+      <button class="btn btn--primary btn--lg" id="openSurprise" type="button">
+        <span class="btn__shine" aria-hidden="true"></span>
+        <span>Open Your Surprise</span>
+      </button>
+      <p class="opening__note">Best experienced with sound on ♪</p>
+    </div>
+    <span class="opening__petal opening__petal--a" aria-hidden="true">🌸</span>
+    <span class="opening__petal opening__petal--b" aria-hidden="true">✨</span>
+    <span class="opening__petal opening__petal--c" aria-hidden="true">💗</span>
+  </div>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="section hero" id="hero">
+      <div class="balloons" id="balloons" aria-hidden="true"></div>
+
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow" data-reveal data-delay="0">
+            <span class="eyebrow__line" aria-hidden="true"></span>
+            <span id="heroEyebrow">The 6th of November</span>
+          </p>
+
+          <h1 class="hero__title" id="heroTitle" data-reveal data-delay="80">
+            Happy Birthday, <span class="hero__name">Angela</span>!
+          </h1>
+
+          <p class="hero__sub" id="heroSub" data-reveal data-delay="160">
+            Semoga hari ini jadi awal dari tahun yang penuh hal baik untukmu.
+          </p>
+
+          <div class="hero__actions" data-reveal data-delay="240">
+            <button class="btn btn--primary" id="wishBtn" type="button">
+              <span class="btn__icon" aria-hidden="true">🕯️</span>
+              <span class="btn__shine" aria-hidden="true"></span>
+              <span>Make a Wish</span>
+            </button>
+            <a class="btn btn--ghost" href="#letter">Baca Surat</a>
+          </div>
+
+          <p class="hero__wish" id="wishMessage" aria-live="polite"></p>
+        </div>
+
+        <div class="hero__cake-wrap" data-reveal data-delay="320">
+          <div class="cake" id="cake" role="img" aria-label="Kue ulang tahun dengan lilin yang menyala">
+            <div class="cake__candles">
+              <span class="candle"><span class="candle__wax"></span><span class="flame"></span></span>
+              <span class="candle"><span class="candle__wax"></span><span class="flame"></span></span>
+              <span class="candle"><span class="candle__wax"></span><span class="flame"></span></span>
+              <span class="candle"><span class="candle__wax"></span><span class="flame"></span></span>
+              <span class="candle"><span class="candle__wax"></span><span class="flame"></span></span>
+            </div>
+            <div class="cake__tier cake__tier--top"><span class="cake__frost"></span></div>
+            <div class="cake__tier cake__tier--mid"><span class="cake__frost"></span></div>
+            <div class="cake__tier cake__tier--bottom"><span class="cake__frost"></span></div>
+            <div class="cake__plate"></div>
+          </div>
+          <p class="cake__hint">Klik “Make a Wish”, lalu tiup lilinnya ✨</p>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#letter" aria-label="Gulir ke surat">
+        <span class="scroll-cue__dot" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ============ LETTER ============ -->
+    <section class="section letter" id="letter">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow" id="letterEyebrow">A Little Letter</p>
+          <h2 class="section-title" id="letterTitle">A Letter For You</h2>
+          <p class="section-sub" id="letterSub">Ditulis pelan-pelan, khusus untuk hari ini.</p>
+        </header>
+
+        <div class="letter-wrap" id="letterWrap">
+          <button class="envelope" id="envelope" type="button" aria-expanded="false" aria-controls="letterPaper">
+            <span class="envelope__back" aria-hidden="true"></span>
+            <span class="envelope__letter-peek" aria-hidden="true"></span>
+            <span class="envelope__front" aria-hidden="true"></span>
+            <span class="envelope__flap" aria-hidden="true"></span>
+            <span class="envelope__seal" aria-hidden="true">♥</span>
+            <span class="envelope__hint" id="envelopeHint">Klik untuk membuka surat</span>
+          </button>
+
+          <article class="letter-paper" id="letterPaper" hidden>
+            <div class="letter-paper__inner">
+              <p class="letter-paper__greeting" id="letterGreeting"></p>
+              <div class="letter-paper__body" id="letterBody"></div>
+              <p class="letter-paper__sign" id="letterSign"></p>
+              <div class="letter-paper__foot">
+                <button class="btn btn--ghost btn--sm" id="skipTyping" type="button">Tampilkan semua</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow" id="galleryEyebrow">Sweet Memories</p>
+          <h2 class="section-title" id="galleryTitle">Memory Lane</h2>
+          <p class="section-sub" id="gallerySub">Beberapa potret yang layak dikenang. Klik untuk memperbesar.</p>
+        </header>
+
+        <div class="gallery__grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE ============ -->
+    <section class="section timeline" id="timeline">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <p class="eyebrow" id="timelineEyebrow">Our Story</p>
+          <h2 class="section-title" id="timelineTitle">Little Moments</h2>
+          <p class="section-sub" id="timelineSub">Potongan waktu yang selalu terasa hangat kalau diingat.</p>
+        </header>
+
+        <ol class="timeline__list" id="timelineList"></ol>
+      </div>
+    </section>
+
+    <!-- ============ FINALE ============ -->
+    <section class="section finale" id="finale">
+      <div class="container">
+        <div class="finale__card" data-reveal>
+          <span class="finale__sparkle finale__sparkle--a" aria-hidden="true">✦</span>
+          <span class="finale__sparkle finale__sparkle--b" aria-hidden="true">✦</span>
+
+          <p class="eyebrow" id="finaleEyebrow">One Last Thing</p>
+          <h2 class="finale__title" id="finaleTitle">You Deserve All The Happiness in The World</h2>
+          <p class="finale__text" id="finaleText">
+            Kamu sudah sampai di akhir kejutan ini. Satu hal terakhir: jangan pernah ragu kalau kamu
+            butuh teman cerita. Pintunya selalu terbuka.
+          </p>
+
+          <button class="btn btn--gold btn--lg" id="surpriseBtn" type="button">
+            <span class="btn__icon" aria-hidden="true">🎁</span>
+            <span class="btn__shine" aria-hidden="true"></span>
+            <span>One More Surprise</span>
+          </button>
+
+          <p class="finale__sign" id="finaleSign">— Selamat ulang tahun, Angela.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p class="site-footer__text">
+        Made with <span class="site-footer__heart" aria-hidden="true">♥</span> for
+        <span id="footerName">Angela Stefanie</span>
+      </p>
+      <button class="link-btn" id="replayBtn" type="button">Putar ulang kejutan</button>
+      <p class="site-footer__year">© <span id="yearNow">2026</span></p>
+    </div>
+  </footer>
+
+  <!-- ============ MUSIC PLAYER ============ -->
+  <div class="music" id="musicPlayer">
+    <button class="music__btn" id="musicBtn" type="button" aria-pressed="false" aria-label="Putar musik">
+      <span class="music__disc" aria-hidden="true">
+        <span class="music__note">♪</span>
+      </span>
+      <span class="music__eq" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </span>
+    </button>
+    <div class="music__meta">
+      <span class="music__label">Music</span>
+      <span class="music__title" id="musicTitle">Happy Birthday (Piano)</span>
+    </div>
+  </div>
+
+  <!-- ============ TOAST ============ -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ============ SECRET MODAL ============ -->
+  <div class="modal" id="secretModal" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="secretTitle" aria-describedby="secretBody">
+      <button class="modal__close" type="button" data-close-modal aria-label="Tutup pesan rahasia">✕</button>
+      <div class="modal__ribbon" aria-hidden="true">🎀</div>
+      <p class="eyebrow" id="secretEyebrow">Just For You</p>
+      <h3 class="modal__title" id="secretTitle">One More Thing…</h3>
+      <div class="modal__body" id="secretBody"></div>
+      <p class="modal__sign" id="secretSign"></p>
+      <button class="btn btn--primary" type="button" data-close-modal>Simpan baik-baik</button>
+    </div>
+  </div>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" hidden>
+    <div class="lightbox__backdrop" data-close-lightbox></div>
+    <div class="lightbox__inner" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption">
+      <button class="lightbox__close" type="button" data-close-lightbox aria-label="Tutup foto">✕</button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" type="button" aria-label="Foto sebelumnya">‹</button>
+      <figure class="lightbox__figure">
+        <img id="lightboxImg" src="" alt="" />
+        <figcaption class="lightbox__cap" id="lightboxCaption"></figcaption>
+      </figure>
+      <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" type="button" aria-label="Foto berikutnya">›</button>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <noscript>
+    <div class="noscript">
+      Halaman ini butuh JavaScript untuk menampilkan kejutan. Aktifkan JavaScript lalu muat ulang.
+    </div>
+  </noscript>
+
+  <script src="js/config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

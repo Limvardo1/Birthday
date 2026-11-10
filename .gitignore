@@ -1,0 +1,9 @@
+# Folder sumber foto asli (hanya dipakai lokal, tidak ikut ke GitHub)
+foto/
+
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log
+.vscode/
+.idea/
