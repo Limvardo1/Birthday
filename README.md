@@ -37,7 +37,7 @@ birthday/
 │   └── script.js
 ├── assets/
 │   ├── images/        ← foto polaroid (foto-1.jpg … foto-6.jpg)
-│   ├── music/         ← lagu.m4a
+│   ├── music/         ← happy-birthday.m4a
 │   └── icons/
 ├── README.md
 └── .nojekyll
@@ -112,11 +112,11 @@ photos: [
 
 ### 4. Musik
 
-File lagu sudah tersedia di `assets/music/lagu.m4a`.
+File lagu sudah tersedia di `assets/music/happy-birthday.m4a`.
 
 ```js
 music: {
-  src: "assets/music/lagu.m4a",
+  src: "assets/music/happy-birthday.m4a",
   title: "Happy Birthday (Piano)",
   volume: 0.55,
 },
@@ -124,6 +124,10 @@ music: {
 
 Ingin mengganti lagu? Taruh file baru di `assets/music/` lalu ubah `music.src`.
 Format aman: MP3 (128–192 kbps) atau M4A/AAC, ukuran sebaiknya di bawah ±5 MB.
+
+> **Tips cache:** kalau mengganti lagu, pakai **nama file baru** (mis. `lagu-baru.m4a`) — jangan
+> menimpa file dengan nama sama. Browser dan CDN GitHub Pages bisa menyimpan file lama,
+> sehingga lagu baru tidak terdengar walau sudah di-push.
 
 Kalau file belum ada, tombol musik tetap muncul dan menampilkan pesan lembut (bukan error).
 Lagu baru diputar setelah pengunjung berinteraksi (misal menekan **Open Your Surprise**).

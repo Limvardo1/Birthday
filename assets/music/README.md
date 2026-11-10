@@ -1,12 +1,12 @@
 # Folder musik
 
-File lagu yang dipakai website ada di folder ini: **`lagu.m4a`** (AAC di dalam kontainer MP4).
+File lagu yang dipakai website ada di folder ini: **`happy-birthday.m4a`** (AAC di dalam kontainer MP4).
 
 `js/config.js` sudah menunjuk ke file tersebut:
 
 ```js
 music: {
-  src: "assets/music/lagu.m4a",
+  src: "assets/music/happy-birthday.m4a",
   title: "Happy Birthday (Piano)",
   volume: 0.55,
 },
