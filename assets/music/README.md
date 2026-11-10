@@ -7,7 +7,7 @@ File lagu yang dipakai website ada di folder ini: **`lagu.m4a`** (AAC di dalam k
 ```js
 music: {
   src: "assets/music/lagu.m4a",
-  title: "A Thousand Years (Piano)",
+  title: "Happy Birthday (Piano)",
   volume: 0.55,
 },
 ```

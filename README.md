@@ -117,7 +117,7 @@ File lagu sudah tersedia di `assets/music/lagu.m4a`.
 ```js
 music: {
   src: "assets/music/lagu.m4a",
-  title: "A Thousand Years (Piano)",
+  title: "Happy Birthday (Piano)",
   volume: 0.55,
 },
 ```

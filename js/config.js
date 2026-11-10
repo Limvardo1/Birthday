@@ -95,7 +95,7 @@ const CONFIG = {
   music: {
     // File lagu ada di assets/music/. Format .m4a / .mp3 sama-sama didukung browser modern.
     src: "assets/music/lagu.m4a",
-    title: "A Thousand Years (Piano)",
+    title: "Happy Birthday (Piano)",
     volume: 0.55,
   },
 
