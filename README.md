@@ -36,8 +36,8 @@ birthday/
 │   ├── config.js      ← SEMUA KONTEN DIATUR DI SINI
 │   └── script.js
 ├── assets/
-│   ├── images/        ← foto kamu (placeholder.svg tersedia)
-│   ├── music/         ← taruh lagu.mp3 di sini
+│   ├── images/        ← foto polaroid (foto-1.jpg … foto-6.jpg)
+│   ├── music/         ← lagu.m4a
 │   └── icons/
 ├── README.md
 └── .nojekyll
@@ -48,6 +48,8 @@ birthday/
 ## 🚀 Menjalankan secara lokal
 
 Cara paling gampang: **klik dua kali `index.html`**.
+
+Ingin melewati layar pembuka saat pratinjau? Buka `index.html?open`.
 
 Kalau ingin pakai server lokal (disarankan agar semua aset terbaca sempurna):
 
